@@ -84,17 +84,13 @@ This project explores a synthetic digital-payment dataset with MySQL and Power B
 | `Quarter` | Quarter label |
 | `Year` | Year value |
 
-The dataset has 1,500 transaction records. A distinct-customer count is a different measure from the number of transaction records, so the dashboard's customer card should be interpreted according to its Power BI measure.
-
 ## 6. Project Workflow
 
 **Industry Selection → Problem Statement → Dataset Collection (CSV Dataset) → Raw Dataset Backup → Load into MySQL → SQL Storage → Connect MySQL with Power BI → Power BI ETL – Power Query → Data Cleaning & Transformation → DAX & KPI Creation → Dashboard Development → Business Insights → Publish to Power BI → GitHub Documentation**
 
-This is the project workflow provided for the README. The SQL screenshot confirms database creation/selection, a transaction-count query, and a ten-row preview query. It does not show additional SQL analysis scripts.
-
 ## 7. SQL Analysis
 
-The following statements are visible in the supplied MySQL Workbench screenshot.
+The dataset was stored in MySQL and retrieved for use in Power BI.
 
 ### Database Setup
 
@@ -178,7 +174,7 @@ These are the SQL statements confirmed by the supplied screenshot; no other SQL 
 - Transaction Distribution by State
 - Month slicer
 
-Dashboard KPI values above are transcribed from the supplied screenshots and reflect the report's displayed measures and formatting. They should not automatically be treated as distinct-customer counts or as independently recalculated values. The dataset contains 1,500 rows, 433 distinct `Customer_ID` values, 1,004 successful transactions, 255 failed transactions, and 241 pending transactions. The dataset-level total amount is ₹18,981,860.13, transaction fees total ₹189,818.71, and refund amounts total ₹2,053,035.68. The dashboard's New Customers card displays 376; its exact measure definition is not visible in the screenshot.
+Power Query was used for data preparation, and DAX measures were used for KPI calculations. State and month slicers were included where shown in the report. Month sorting was prepared for chronological monthly analysis.
 
 ## 9. Data Analysis & Visualization
 
@@ -208,20 +204,20 @@ Based on the supplied dataset and dashboard screenshots:
 These findings describe the supplied synthetic educational dataset only. They should not be generalized to Razorpay's actual business operations. Visuals can be explored further with the Month slicer.
 
 ## 11. Power BI Dashboard Screenshots
-
-Save the three dashboard images in the repository's `Screenshot` folder using these filenames, or update the Markdown paths to match the actual filenames.
-
 ### Executive Transaction Overview
 
-![Executive Transaction Overview](Screenshot/executive_transaction_overview.png)
+<img width="970" height="537" alt="Dashboard 1" src="https://github.com/user-attachments/assets/49fdff7d-2939-4fe0-b8d1-beb9775459a2" />
+
 
 ### Payment Performance Analysis
 
-![Payment Performance Analysis](Screenshot/payment_performance_analysis.png)
+<img width="930" height="535" alt="Dashboard 2" src="https://github.com/user-attachments/assets/b2fbe25c-058d-4cfe-9a43-2910773a89a7" />
+
 
 ### Customer Behaviour & Refund Analytics
 
-![Customer Behaviour & Refund Analytics](Screenshot/customer_behaviour_refund_analytics.png)
+<img width="939" height="537" alt="Dashboard 3" src="https://github.com/user-attachments/assets/4ce77b0d-1d61-4279-bd02-e98adbf2eff6" />
+
 
 ## 12. Project Folder Structure
 
@@ -245,8 +241,6 @@ PROJECT FINAL/
     ├── Project_Report.pdf
     └── Data_Dictionary.xlsx
 ```
-
-Replace bracketed placeholders and screenshot filenames with the exact filenames present in the repository. The SQL screenshot confirms queries were run in MySQL Workbench, but does not by itself confirm that a separate `.sql` file has been saved.
 
 ## 13. Conclusion
 
