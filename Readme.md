@@ -238,7 +238,7 @@ PROJECT FINAL/
 │   ├── payment_performance_analysis.png
 │   └── customer_behaviour_refund_analytics.png
 └── Documentation/
-    ├── Project_Report.pdf
+    ├── Razorpay_Analytics_Project.pdf
     └── Data_Dictionary.xlsx
 ```
 
